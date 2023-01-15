@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+        <div class="container">
+            <h1>Expense <span style="color: #777;">Tracker</span></h1>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    
+    <!-- Input Section Start -->
+    <section class="input">
+        <div class="container">
+            <form action="" class="input-form">
+                <h2>Add A New Item</h2>
+                <label for="name">
+                    Name <input type="text" name="Name" id="name" placeholder="Where the expense was made" required>
+                </label>
+                <label for="date">
+                    Date <input type="date" name="date" id="date" required>
+                </label>
+                <label for="amount">
+                    Amount <input type="text" name="Amount" id="amount" placeholder="The expense amount" required>
+                </label>
+
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </section>
+    <!-- Input Section End -->
+
+    <!-- Display Section Start -->
+    <section class="display">
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th class="small"></th>
+                </tr>
+                <tr>
+                    <td>Mac Donalds</td>
+                    <td>15 feb 2015</td>
+                    <td class="money">$15.00</td>
+                    <td><button id="deleteBtn">X</button></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+    <!-- Display Section End -->
+
+    <footer>
+        <!-- copyright text -->
+        <p class="copyright">&copy;2023 ayuat2003</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
