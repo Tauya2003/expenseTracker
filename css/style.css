@@ -54,6 +54,20 @@ h1, h2, th,td{
     font-size: 1.1rem;
     margin: 6px;
 }
+  
+.input-form input:invalid + span::after {
+    position: absolute;
+    content: "✖";
+    color: #E81123;
+    padding-top: 2%;
+}
+  
+.input-form input:valid + span::after {
+    position: absolute;
+    content: "✓";
+    color: #008000;
+    padding-top: 2%;
+}
 
 .input-form input{
     width: 100%;
@@ -64,6 +78,10 @@ h1, h2, th,td{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #cccccc;
+}
+
+.input-form #amount{
+    width: 95%;
 }
 
 .input-form input::placeholder{
@@ -149,13 +167,15 @@ tr:hover {
 }
 
 footer{
-    /* max-width: 750px; */
-    /* margin: 0 auto; */
     height: 80px;
     text-align: center;
     padding-top: 40px;
     font-size: 11px;
     letter-spacing: 2px;
+}
+
+footer p{
+    text-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
 }
 
 

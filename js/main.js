@@ -27,7 +27,7 @@ myForm.addEventListener('submit', addNew = (e) => {
     // Appending text to the td elements
     tdName.appendChild(document.createTextNode(expenseName));
     tdDate.appendChild(document.createTextNode(date));
-    tdAmount.appendChild(document.createTextNode(amount));
+    tdAmount.appendChild(document.createTextNode(`$${amount}`));
 
     // Creating a new delete button and adding an id
     deleteBtn = document.createElement('button');
